@@ -44,6 +44,9 @@
 // but the above approach is not very dynamic for example if we have items as [[1,2,3],[4,5,[6]]] it will return 'no'
 //in order to solve this we can use recursion
 
+
+const items = [[1,2,3],[4,5,[6]]];
+
 function findSix(i){
     let hasSix = "no";
     i.forEach(a => {
@@ -57,3 +60,5 @@ function findSix(i){
     });
     return hasSix;
 }
+
+findSix(items) //?
